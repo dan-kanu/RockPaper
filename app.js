@@ -85,6 +85,7 @@ $(document).ready(function() {
     function percentProgress(id, percentageAmount, color){
       document.getElementById(id).style.width = percentageAmount + "%";
       document.getElementById(id).style.backgroundColor = color;
+			document.getElementById(id).style.transition = 0.8 + "s";
     }
 
     percentProgress("rock-percentatge-gauge", percent(userRock), "#F900CA");
